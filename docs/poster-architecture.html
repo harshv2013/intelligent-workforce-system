@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareOps AI - Architecture Diagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a2e;
+            padding: 20px;
+        }
+        
+        .poster {
+            width: 1200px;
+            height: 800px;
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            padding: 50px;
+        }
+        
+        .title {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .title h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .title p {
+            font-size: 20px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .architecture {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .layer {
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .layer-title {
+            color: #00d4ff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .layer-content {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .component {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(0,212,255,0.1);
+            border: 1px solid rgba(0,212,255,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .component:hover {
+            transform: translateY(-5px);
+            background: rgba(0,212,255,0.2);
+        }
+        
+        .component-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .component-name {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .component-desc {
+            color: rgba(255,255,255,0.6);
+            font-size: 12px;
+        }
+        
+        .arrow {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 32px;
+            margin: -15px 0;
+        }
+        
+        .agents-row {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+        
+        .agent {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+        
+        .agent-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .agent-name {
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="title">
+            <h1>🏗️ Multi-Agent Architecture</h1>
+            <p>Production-Grade Healthcare AI System</p>
+        </div>
+        
+        <div class="architecture">
+            <!-- Security Layer -->
+            <div class="layer">
+                <div class="layer-title">🔒 Security Layer</div>
+                <div class="layer-content">
+                    <div class="component">
+                        <div class="component-icon">🛡️</div>
+                        <div class="component-name">Prompt Injection</div>
+                        <div class="component-desc">6 Attack Categories</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">🔍</div>
+                        <div class="component-name">PII Detection</div>
+                        <div class="component-desc">8 Types Detected</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">🔐</div>
+                        <div class="component-name">RBAC</div>
+                        <div class="component-desc">8 Roles, 15 Categories</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">📝</div>
+                        <div class="component-name">Audit Logs</div>
+                        <div class="component-desc">Complete Trail</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow">⬇️</div>
+            
+            <!-- Orchestration Layer -->
+            <div class="layer">
+                <div class="layer-title">🎯 Commander Orchestrator (GPT-4o)</div>
+                <div class="layer-content">
+                    <div class="component">
+                        <div class="component-icon">🧠</div>
+                        <div class="component-name">Intent Analysis</div>
+                        <div class="component-desc">LLM-Based Routing</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">🔄</div>
+                        <div class="component-name">A2A Protocol</div>
+                        <div class="component-desc">Agent Communication</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">⚡</div>
+                        <div class="component-name">Parallel Tasks</div>
+                        <div class="component-desc">Async Processing</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow">⬇️</div>
+            
+            <!-- Agent Layer -->
+            <div class="layer">
+                <div class="layer-title">🤖 Specialist Agents</div>
+                <div class="agents-row">
+                    <div class="agent">
+                        <div class="agent-icon">📋</div>
+                        <div class="agent-name">HR Agent</div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">✅</div>
+                        <div class="agent-name">Credentialing</div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">⚖️</div>
+                        <div class="agent-name">Compliance</div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">📅</div>
+                        <div class="agent-name">Scheduling</div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">📊</div>
+                        <div class="agent-name">Insights</div>
+                    </div>
+                    <div class="agent">
+                        <div class="agent-icon">🔧</div>
+                        <div class="agent-name">Tools</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow">⬇️</div>
+            
+            <!-- Infrastructure Layer -->
+            <div class="layer">
+                <div class="layer-title">💾 Shared Infrastructure</div>
+                <div class="layer-content">
+                    <div class="component">
+                        <div class="component-icon">💭</div>
+                        <div class="component-name">Semantic Memory</div>
+                        <div class="component-desc">Azure OpenAI Embeddings</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">🗄️</div>
+                        <div class="component-name">Cosmos DB</div>
+                        <div class="component-desc">Conversation Storage</div>
+                    </div>
+                    <div class="component">
+                        <div class="component-icon">📡</div>
+                        <div class="component-name">Telemetry</div>
+                        <div class="component-desc">Performance Tracking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

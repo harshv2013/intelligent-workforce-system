@@ -1,0 +1,16 @@
+# Azure AI SDK
+azure-ai-projects
+azure-identity
+azure-search-documents
+azure-storage-blob
+
+# OpenAI & AI
+openai
+
+# Utilities
+python-dotenv
+requests
+
+# Development
+pytest
+black
