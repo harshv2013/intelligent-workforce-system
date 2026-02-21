@@ -134,8 +134,8 @@ It demonstrates enterprise-grade multi-agent orchestration, security-first archi
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR-USERNAME/careops-ai-platform.git
-cd careops-ai-platform
+git clone https://github.com/harshv2013/intelligent-workforce-system.git
+cd intelligent-workforce-system
 
 # Create virtual environment
 python -m venv .venv
@@ -443,10 +443,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Project Maintainer:** [Your Name]  
-**Email:** [your.email@example.com]  
-**LinkedIn:** [Your LinkedIn]  
-**Certification:** Microsoft AB-100 Candidate
+- **Project Maintainer:** Harsh Vardhan
+- **Email:** harsh2013@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/harsh-vardhan-60b6aa106/
 
 
 **Built with ❤️ for Healthcare AI and AB-100 Certification**
