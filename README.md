@@ -447,5 +447,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Email:** harsh2013@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/harsh-vardhan-60b6aa106/
 
+- **Medium Article link:** https://medium.com/@harsh2013/building-enterprise-grade-multi-agent-ai-systems-a-complete-architecture-guide-c00e212b9c54
+
 
 **Built with ❤️ for Healthcare AI and AB-100 Certification**
